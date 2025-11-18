@@ -3740,6 +3740,7 @@ def send_to_email(
             html_content = f.read()
 
         domain = from_email.split("@")[-1].lower()
+        print("domain:",domain)
 
         if custom_smtp_server and custom_smtp_port:
             # 使用自定义 SMTP 配置
