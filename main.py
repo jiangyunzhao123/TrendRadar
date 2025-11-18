@@ -3332,8 +3332,11 @@ def send_to_notifications(
     telegram_token = CONFIG["TELEGRAM_BOT_TOKEN"]
     telegram_chat_id = CONFIG["TELEGRAM_CHAT_ID"]
     email_from = CONFIG["EMAIL_FROM"]
+    print(email_from)
     email_password = CONFIG["EMAIL_PASSWORD"]
+    print(email_password)
     email_to = CONFIG["EMAIL_TO"]
+    print(email_to)
     email_smtp_server = CONFIG.get("EMAIL_SMTP_SERVER", "")
     email_smtp_port = CONFIG.get("EMAIL_SMTP_PORT", "")
     ntfy_server_url = CONFIG["NTFY_SERVER_URL"]
